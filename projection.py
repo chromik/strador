@@ -30,30 +30,3 @@ class Projection:
             [0, 0, 1, 0],
             [hw, hh, 0, 1]
         ])
-
-
-    # def __init__(self, render):
-    #     near = render.camera.near_plane
-    #     far = render.camera.far_plane
-    #     h = math.tan(render.camera.h_fov / 2)
-    #     v = math.tan(render.camera.v_fov / 2)
-    #
-    #     m00 = 1 / h
-    #     m11 = 1 / v
-    #     m22 = (far + near) / (far - near)
-    #     m32 = -2 * near * far / (far - near)
-    #
-    #     self.projection_matrix = np.array([
-    #         [m00, 0, 0, 0],
-    #         [0, m11, 0, 0],
-    #         [0, 0, m22, 1],
-    #         [0, 0, m32, 0]
-    #     ])
-    #
-    #     hw, hh = render.H_WIDTH, render.H_HEIGHT
-    #     self.to_screen_matrix = np.array([
-    #         [hw, 0, 0, 0],
-    #         [0, -hh, 0, 0],
-    #         [0, 0, 1, 0],
-    #         [hw, hh, 0, 1]
-    #     ])
